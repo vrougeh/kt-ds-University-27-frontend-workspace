@@ -1,0 +1,26 @@
+.content-box {
+  /*box-sizing: content-box; 가 기본으로 들어감*/
+  /*box 너비 지정*/
+  width: 500px;
+  background-color: #70700e;
+
+  /*Padding -> content와 테두리 사이의 여백*/
+  /*12시 기준으로 시계방향으로 지정 가능*/
+  /*      top right bottom left*/
+  padding: 5px 12px 7px 3px;
+  border: 10px solid #000;
+  /*box model의 크기와 관계 없음
+    박스들을 떨어트리는 용도*/
+  margin: 10px 20px 30px 40px;
+}
+
+.border-box {
+  /*박스의 크기 기준을 boder로 지정한다.*/
+  box-sizing: border-box;
+  /*border 포함 500px 만들어짐*/
+  width: 500px;
+  background-color: #f0f;
+  padding: 5px 12px 7px 3px;
+  border: 10px solid #000;
+  margin: 10px 20px 30px 40px;
+}

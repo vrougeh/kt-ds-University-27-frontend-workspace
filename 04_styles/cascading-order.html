@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cascading-Order Style 실습</title>
+    <!--Internal Style : 우선순위 2번째로 높음 위치에 따라 적용이 다르게 된다-->
+    <!-- <style type="text/css">
+      #header {
+        background-color: #ff00ff;
+        color: #ffff00;
+      }
+    </style> -->
+    <!--External Style : 우선순위 가장낮음-->
+    <link rel="stylesheet" type="text/css" href="./external.css" />
+    <!--Internal Style : 우선순위 2번째로 높음-->
+    <style type="text/css">
+      #header {
+        background-color: #ff00ff;
+        color: #ffff00;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Inline Style : 우선순위 가장 높음-->
+    <div id="header" style="background-color: #000000; color: #ffffff">
+      Header 영역
+      <p class="header--logo">로고 영역입니다</p>
+    </div>
+    <div id="main-container">
+      main-container 영역
+      <p class="main-container--content">main-container--content 영역입니다.</p>
+    </div>
+    <div id="footer">
+      footer 영역
+      <ul class="footer-links">
+        footer-links 영역입니다.
+        <li class="footer-links--link">footer-links--link 영역1</li>
+        <li class="footer-links--link">footer-links--link 영역2</li>
+        <li class="footer-links--link">footer-links--link 영역3</li>
+      </ul>
+    </div>
+  </body>
+</html>

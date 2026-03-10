@@ -1,0 +1,122 @@
+/*
+스타일링의 우선순위
+    스타일 방법에 따른 우선순위
+        (단 html 코드의 위치에 따라 우선순위는 달라질 수 있다.)
+        1. external style
+        2. internal style
+        3. inline style
+    같은 태그의 스타일링 우선순위
+        1. tag 셀렉터, pseudo-element
+        2. class 셀렉터, pseudo-class, attribute
+        3. id 셀렉터
+        4. inline style
+        - 같은 태그에 같은 우선순위를 가지는 스타일링을 했을 때의 우선순위
+            예 > a 태그에 pseudo-class 를 여러개 적용했을때
+                 a 태그에 class 를 여러개 적용했을때
+            ==> CSS의 작성 순서로 스타일링 적용
+*/
+
+/*링크에대한 스타일*/
+a:link {
+  color: #666;
+  font: 20px;
+  text-decoration: none;
+}
+
+/*방문 기록이 있는 링크의 스타일
+ - 해당 코드의 위치에 따라 아래 코드가 적용이 되지 않는 것이 있음*/
+a:visited {
+  color: #666;
+}
+
+/*링크에 마우스를 올렸을 때의 스타일*/
+a:hover {
+  color: #444;
+  text-decoration: underline;
+}
+
+/*링크를 마우스로 누르고 있을 때의 스타일*/
+a:active {
+  color: #a00;
+}
+
+a:focus {
+  /* border: 3px solid #f0f; */
+  /* outline: 5px dashed #0f0; */
+  outline: 0;
+  background-color: #00ffff;
+  color: #f00;
+}
+
+.section-title {
+  color: #333 !important;
+  margin: 5px;
+  border-bottom: 2px solid #ccc;
+}
+
+.virtical-list {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.virtical-item {
+  padding: 5px 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+/*class가 virtical-item인 짝수 번째 아이템에 스타일링*/
+.virtical-item:nth-child(even) {
+  background-color: #eee;
+}
+
+/*class가 virtical-item인 마지막 아이템에 스타일링*/
+.virtical-item:last-child {
+  border-bottom: 0px;
+}
+
+.horizontal-list {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 0; /*영역 사이의 공백을 없앰 (옜날방식)*/
+}
+
+.horizontal-item {
+  display: inline-block;
+  padding: 5px 10px;
+  border-left: 1px dashed #ccc;
+  font-size: 20px;
+}
+/*pseudo element*/
+.horizontal-item::before {
+  content: "*";
+  display: inline-block;
+  background-color: #f00;
+  width: 10px;
+  height: 20px;
+  padding-right: 10px;
+  margin-left: 5px;
+}
+
+/*pseudo element*/
+.horizontal-item::after {
+  content: "👍";
+}
+
+.horizontal-item:first-child {
+  border-left: 0;
+}
+
+.horizontal-item:last-child {
+  color: #123465;
+}
+
+.horizontal-item:nth-child(odd) {
+  background-color: #0000ff33;
+}
+
+.horizontal-item:hover {
+  color: #a00;
+}

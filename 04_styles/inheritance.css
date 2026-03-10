@@ -1,0 +1,7 @@
+.main {
+  /*폰트 지정 : 사용자의 브라우저 설정에 따른 폰트를 사용함*/
+  font-family: sans-serif;
+  color: #798312;
+  /*상속받은 div들은 적용되지 않음*/
+  display: inline-block;
+}
