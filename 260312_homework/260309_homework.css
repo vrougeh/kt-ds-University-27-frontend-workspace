@@ -10,10 +10,16 @@ body {
   background: #fff;
 }
 
+img {
+  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(321deg)
+    brightness(110%) contrast(110%);
+}
+
 .top {
   background-color: #f8d74a;
   height: 40px;
   display: flex;
+  align-items: center;
 }
 
 .center {
@@ -81,16 +87,11 @@ body {
   float: right;
 }
 
-.right-space {
-  flex: 0 0 115px;
-  justify-content: space-between;
-}
-
 .svg {
   border: 1.2px solid #e8af2b;
   border-radius: 4px;
   height: 20px;
-  padding: 4px;
+  padding: 3px;
   background-color: #fed000;
 }
 
@@ -120,9 +121,12 @@ body {
   background-image: url(./common.1px.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
+  margin-top: 5px;
+}
+.right-space {
 }
 
-.top > .right:nth-child(2) {
-  flex: 0 0 115px;
-  justify-content: space-between;
+.right-space > .right {
+  margin-right: 10px;
+  margin-top: 5px;
 }
