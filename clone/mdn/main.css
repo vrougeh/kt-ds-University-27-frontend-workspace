@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000f0;
+  color: #fff;
+}
+
+.horizontal-list,
+.vertical-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style-type: none;
+}
+
+.horizontal-item {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  padding: 20px 15px;
+}
+
+/*패딩 제거*/
+.no-padding {
+  padding: 0;
+}
+
+.main-top-logo {
+  width: 100px;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000f0;
+}
+
+.main-top-navigator,
+.breadcrumbs-bar {
+  position: relative;
+}
+
+.breadcrumbs-bar > .horizontal-list {
+  border-width: 1px;
+  border-bottom: 1px solid #c3c7cb;
+  border-top: 1px solid #c3c7cb;
+}
+
+.breadcrumbs-bar > .horizontal-list > .horizontal-item {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.breadcrumbs-bar
+  > .horizontal-list:not(.position-right)
+  > .horizontal-item:not(.horizontal-item:last-child):after {
+  padding: 0 10px;
+  content: " > ";
+  color: #fff;
+  size: 20px;
+}
+
+.breadcrumbs-bar > .horizontal-list:not(.position-right) > .horizontal-item {
+  color: #fff;
+}
+
+.breadcrumbs-bar
+  > .horizontal-list:not(.position-right)
+  > .horizontal-item:hover {
+}
+
+.position-middle {
+  position: absolute;
+  top: 0;
+  right: 25%;
+}
+
+.position-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
