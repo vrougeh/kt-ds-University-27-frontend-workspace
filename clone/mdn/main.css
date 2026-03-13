@@ -9,6 +9,12 @@ body {
   color: #fff;
 }
 
+.position-middle > .horizontal-item > img {
+  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(321deg)
+    brightness(110%) contrast(110%);
+  background-color: #18191b;
+}
+
 .main-top-navigator {
   display: flex;
   justify-content: space-between;
