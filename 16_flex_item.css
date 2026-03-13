@@ -1,0 +1,16 @@
+.flex > li {
+  /*아이템의 최소크기 지정 : 메인축에 따라 가로 혹은 높이*/
+  flex-basis: 100px;
+  /* flex-basis: 50%; */
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+}
+
+.flex {
+  flex-wrap: nowrap;
+}
+
+.vertical {
+  height: auto;
+  flex-direction: column;
+}

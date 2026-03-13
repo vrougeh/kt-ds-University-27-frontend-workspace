@@ -1,0 +1,28 @@
+.no-flex {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.no-flex > * {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.flex {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  /* display: inline-flex; */
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /*메인축 정렬*/
+  /* justify-content: space-around; */
+  /*교차축 정렬*/
+  /* align-items: stretch; */
+  /*줄넘김 정렬*/
+  /* align-content: stretch; */
+}

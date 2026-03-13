@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: #333;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 87.5rem /*1400px*/;
+  margin: 0 auto;
+  font-size: 0px;
+}
+
+.wrapper > .aside,
+.wrapper > .contents,
+.wrapper > .help {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.625rem;
+  vertical-align: top;
+}
+
+.wrapper > .aside {
+  width: 200px;
+  min-width: 9.25rem;
+}
+
+.wrapper > .aside,
+.wrapper > .help {
+  width: 12%;
+  background-color: #ddd;
+}
+
+.wrapper > .contents {
+  width: 76%;
+}
+
+.wrapper > .contents > .tip {
+  background-color: #ffff8e;
+  font-size: 0.8rem;
+  border-left: 0.1875rem solid #fe54d3;
+  padding: 0.625rem;
+  border-radius: 0.4375rem;
+}
+
+.v-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.v-list > li {
+  padding: 0.625rem;
+}
+
+.box {
+  width: 6.25rem;
+  height: 6.25rem;
+  display: inline-block;
+  background-color: #00ffff;
+  border-radius: 50%;
+}
+
+.ad {
+  height: 18.75rem;
+  background-color: #12332199;
+  margin-bottom: 0.625rem;
+}
+
+/*
+테블릿용 스타일
+화면을 보고있는 기기의 너미가 1280px 이하일 경우의 스타일
+*/
+@media (max-width: 1280px) {
+  .wrapper > .contents {
+    width: 100%;
+  }
+  .wrapper > .help {
+    display: block;
+    width: 100%;
+    font-size: 0;
+  }
+
+  .wrapper > .help > .ad {
+    display: inline-block;
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+    height: auto;
+    margin: 0;
+  }
+}
+
+/*
+핸드폰용 스타일
+화면을 보고있는 기기의 너미가 616px 이하일 경우의 스타일
+*/
+@media (max-width: 616px) {
+  .wrapper > .aside,
+  .wrapper > .contents,
+  .wrapper > .help {
+    display: block;
+    width: 100%;
+  }
+
+  .wrapper > .aside > .v-list > li {
+    display: inline-block;
+  }
+
+  .wrapper > .contents {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .wrapper > .contents > * {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.625rem;
+  }
+
+  .wrapper > .contents > .tip {
+    display: none;
+  }
+
+  .wrapper > .help > .ad {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.625rem;
+  }
+
+  .wrapper > .help > .ad:last-child {
+    margin-bottom: 0;
+  }
+}

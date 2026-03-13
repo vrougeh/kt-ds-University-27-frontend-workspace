@@ -1,10 +1,18 @@
 * {
   box-sizing: border-box;
+  background-color: #18191b;
+  color: #fff;
 }
 
 body {
-  background-color: #000000f0;
+  background-color: #18191b;
   color: #fff;
+}
+
+.main-top-navigator {
+  display: flex;
+  justify-content: space-between;
+  background-color: #18191b;
 }
 
 .horizontal-list,
@@ -28,7 +36,8 @@ body {
 }
 
 .main-top-logo {
-  width: 100px;
+  width: 83;
+  height: 24;
 }
 
 .fixed-header {
@@ -36,7 +45,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000000f0;
+  background-color: #18191b;
 }
 
 .main-top-navigator,
