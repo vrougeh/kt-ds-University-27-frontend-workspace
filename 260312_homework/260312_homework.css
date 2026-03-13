@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html {
   background: #555;
 }
@@ -18,8 +21,8 @@ img {
 .top {
   background-color: #f8d74a;
   height: 40px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .center {
@@ -80,18 +83,13 @@ img {
 
 .left {
   float: left;
-  flex: 1;
+  /* flex: 1; */
 }
-
-.right {
-  float: right;
-}
-
 .svg {
   border: 1.2px solid #e8af2b;
   border-radius: 4px;
-  height: 20px;
-  padding: 3px;
+  height: 29px;
+  padding: 2px 3px 3px 3px;
   background-color: #fed000;
 }
 
@@ -124,9 +122,11 @@ img {
   margin-top: 5px;
 }
 .right-space {
+  float: right;
 }
 
 .right-space > .right {
   margin-right: 10px;
   margin-top: 5px;
+  display: inline-block;
 }
