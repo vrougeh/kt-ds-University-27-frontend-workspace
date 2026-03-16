@@ -9,27 +9,30 @@ html {
 body {
   margin: 0;
   height: 100vh;
+  overflow: hidden;
+  min-width: 1200px;
 }
 
 .grid-layout {
-  /* width: 1160px; */
+  width: 1200px;
   height: 100vh;
   display: grid;
   justify-items: center;
   align-items: center;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
 }
 
 .grid-left {
-  background-color: blue;
+  /* background-color: blue; */
   grid-template-columns: 20px 1fr 20px 4fr 20px;
   margin: 10px;
   width: 570px;
 }
 
 .grid-right {
-  background-color: red;
+  /* background-color: red; */
   margin: 10px;
   width: 570px;
 }
@@ -38,6 +41,23 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.top-title > div:first-child {
+  font-weight: 700;
+}
+.top-title > div:last-child {
+  font-size: 12px;
+}
+
+.after::after {
+  content: "->";
+  background-color: #1bbd4c;
+  border-radius: 12px;
+  padding: 0 3px;
+  color: white;
 }
 
 .image {
@@ -50,6 +70,28 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.middle-title > div {
+  padding: 5px 25px;
+  border-radius: 24px;
+  margin: 20px;
+}
+
+.grid-left > .middle-title > div:first-child {
+  background-color: #1bbd4c;
+  padding: 5px 25px;
+  border-radius: 24px;
+  margin: 20px;
+  color: #fff;
+}
+
+.grid-right > .middle-title > div:last-child {
+  background-color: mediumslateblue;
+  padding: 5px 25px;
+  border-radius: 24px;
+  margin: 20px;
+  color: #fff;
 }
 
 .contents {
@@ -70,4 +112,16 @@ body {
 
 .bottom-content {
   grid-column: 1 / -1;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.footer {
+  border-radius: 24px;
+  border: 1px solid #eee;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfbfb;
 }
