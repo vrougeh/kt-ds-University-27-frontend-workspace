@@ -125,3 +125,23 @@ body {
   justify-content: center;
   background-color: #fbfbfb;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.gray {
+  color: #333;
+}
+
+.before::before {
+  content: "쿠폰적용가";
+  color: #ff0000;
+  margin-right: 5px;
+}

@@ -1,0 +1,91 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.form > .basic-info {
+  display: grid;
+  grid-template-columns: 3.125rem 1fr minmax(3.125rem, auto);
+  border: 1px solid #ddd;
+}
+
+.form > .personal-info {
+  display: grid;
+  grid-template-columns: 3.125rem 1fr;
+  border: 1px solid #ddd;
+}
+
+.form > .celect-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  border: 1px solid #ddd;
+}
+
+.form > .tel-info,
+.form > .agreement-info {
+  border: 1px solid #ddd;
+}
+
+label {
+  text-align: center;
+}
+
+select {
+  outline: none;
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input:focus-within {
+  background-color: #9cfbfa;
+}
+.checkbox {
+  display: flex;
+}
+.checkbox > label {
+  width: 100px;
+  height: 16px;
+  font-size: 12px;
+  color: #333;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  text-align: center;
+  padding: 0.3rem 0.625rem;
+  border: 1px solid #333;
+}
+
+input[type="radio"]:checked + label {
+  color: #46a746;
+  border: 1px solid #46a746;
+  text-align: center;
+}
+
+input[type="radio"] + label:first-of-type {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+input[type="radio"] + label:last-of-type {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.send {
+  background-color: #46a746;
+  color: #fff;
+  text-align: center;
+  padding: 0.625rem 0;
+  border-radius: 12px;
+}

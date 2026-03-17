@@ -1,0 +1,73 @@
+/* input[type="text"] {
+  width: 100%;
+}
+
+input[type="number"] {
+  padding: 0.62rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+input[type="number"]:focus {
+  outline: 0;
+  box-shadow: 0 0 1rem #00fff7;
+}
+
+/*input 태그의 type은 text이고 maxlength가 있으면
+input[type="text"][maxlength] {
+  background-color: #00fff7;
+}
+
+/*input 태그의 type은 text이고 maxlength가 20이라면
+input[type="text"][maxlength="20"] {
+  background-color: #00fff7;
+  padding: 10rem;
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(6.25rem, auto) 1fr;
+  row-gap: 0.625rem;
+  align-items: center;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.4rem 0.625rem;
+  outline: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 0.3rem 0.625rem;
+  border: 1px solid #51aa48;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  color: red;
+  border: 1px solid #ff0000;
+}
+
+select {
+  padding: 0.625rem;
+  outline: 0;
+  background-color: #aaddaf;
+  color: #fffeed;
+  border-radius: 0.5rem;
+  border: 1px solid #7a7d7f;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 0.625rem;
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+}

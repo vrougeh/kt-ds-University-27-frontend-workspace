@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Froms</title>
+    <link rel="stylesheet" type="text/css" href="./18_forms.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <label for="email">email</label>
+      <input type="email" id="email" />
+
+      <label for="password">password</label>
+      <input type="password" id="password" />
+
+      <label for="male">성별</label>
+      <div>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">남</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">여</label>
+      </div>
+      <label for="st">가입경로</label>
+      <div>
+        <input type="checkbox" name="channel" id="st" />
+        <label for="st">인스타그램</label>
+        <input type="checkbox" name="channel" id="x" /> <label for="x">X</label>
+        <input type="checkbox" name="channel" id="fr" />
+        <label for="fr">지인 소개</label>
+        <input type="checkbox" name="channel" id="yt" />
+        <label for="yt">유튜브</label>
+      </div>
+
+      <label for="jobs">직업</label>
+      <select name="" id="jobs">
+        <option value="">(선택)</option>
+        <option value="">관련산업 종사자</option>
+        <option value="">일반인</option>
+        <option value="">학생</option>
+        <option value="">기타</option>
+      </select>
+
+      <label for="other">하고 싶은 말</label>
+      <textarea name="" id="other"></textarea>
+    </div>
+  </body>
+</html>
