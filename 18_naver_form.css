@@ -45,12 +45,20 @@ input {
 input:focus-within {
   background-color: #9cfbfa;
 }
+.celect-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  text-align: center;
+  gap: 0.625rem;
+}
 .checkbox {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  text-align: center;
 }
 .checkbox > label {
-  width: 100px;
-  height: 16px;
   font-size: 12px;
   color: #333;
 }
