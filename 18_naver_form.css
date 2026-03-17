@@ -97,3 +97,8 @@ input[type="radio"] + label:last-of-type {
   padding: 0.625rem 0;
   border-radius: 12px;
 }
+
+.agreement-info > input + label span {
+  color: #46a746;
+  font-size: 12px;
+}
