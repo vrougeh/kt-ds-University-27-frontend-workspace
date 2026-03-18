@@ -1,0 +1,115 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #dc143c;
+  margin: 10px;
+}
+
+.translate {
+  /*box 이동 translate(x,y)*/
+  transform: translate(100px, 100px);
+  background-color: #7fffd4;
+}
+
+.scale {
+  /*box 크기 조정 scale(x,y)*/
+  transform: scale(2, 2) translate(200px, 200px);
+  background-color: #ff7f50;
+}
+
+.rotate {
+  /*box 회전 rotate(회전각 < deg,turn) - 시계방향*/
+  /* transform: rotate(45deg); */
+  transform: rotate(0.125turn);
+  background-color: #adff2f;
+}
+
+.invert {
+  /*돌리기, 뒤집기*/
+  /* transform: scale(-1, 1); */
+  transform: rotate(180deg);
+  background-color: #1e90ff;
+}
+
+.change-color {
+  transition: background-color 0.3s;
+}
+
+.change-color:hover {
+  background-color: #fff;
+}
+
+.change-scale {
+  transition:
+    transform 0.3s 0.3s,
+    background-color 0.3s;
+}
+
+.change-scale:hover {
+  background-color: #00ffff;
+  transform: scale(2, 2);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.change-rotate {
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
+.change-rotate:hover {
+  transform: rotate(360deg);
+  /* transform: rotate(1turn); */
+  /* animation: spik-rotate 0.3s infinite;
+  overflow: hidden; */
+}
+
+.animate-rotate {
+  overflow: hidden;
+}
+
+.animate-rotate:hover {
+  /* animation: doro-rotate 0.2s infinite linear; */
+  animation: spik-rotate 0.2s infinite;
+}
+
+@keyframes spik-rotate {
+  0% {
+    transform: rotate(0deg) scale(1, 1) translate(0, 0);
+    border-radius: 0px;
+  }
+  50% {
+    transform: rotate(180deg) scale(2, 2) translate(50px, 50px);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(360deg) scale(1, 1) translate(0, 0);
+    border-radius: 00px;
+  }
+}
+
+@keyframes doro-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hover-me {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.hover-me > img {
+  transition: transform 0.2s;
+}
+
+.hover-me:hover > img {
+  transform: scale(1.5, 1.5) rotate(3deg);
+}
