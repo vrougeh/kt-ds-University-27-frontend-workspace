@@ -1,0 +1,27 @@
+body,
+li,
+ul,
+.bottom-content {
+  border: 1px solid #000;
+  padding: 1rem;
+  margin: 1rem;
+  width: 10rem;
+  height: 2rem;
+}
+
+body,
+ul,
+li,
+.bottom-content {
+  width: auto;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: #00ffff;
+  color: #ff0000;
+}
