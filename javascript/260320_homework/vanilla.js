@@ -22,9 +22,11 @@ window.onload = function () {
       alert("이미 모든 아이템이 제거되었습니다.");
     } else {
       //   var listItems = ul.querySelectorAll("li");
+
       //   for (var i = 0; i < listItems.length; i++) {
       //     listItems[i].remove();
       //   }
+
       // listItems.forEach(function (li) {
       //   li.remove();
       // });

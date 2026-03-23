@@ -17,8 +17,10 @@ li,
   height: auto;
 }
 
-li {
+li,
+.bottom-content {
   list-style-type: none;
+  text-align: center;
 }
 
 li:hover {
