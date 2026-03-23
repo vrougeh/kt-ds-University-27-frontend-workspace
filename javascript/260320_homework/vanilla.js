@@ -33,8 +33,8 @@ window.onload = function () {
 
       // ul.replaceChildren();
       ul.innerHTML = "";
+      number = 0;
+      span.innerText = number;
     }
-    number = 0;
-    span.innerText = number;
   });
 };
