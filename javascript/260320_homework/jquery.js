@@ -11,7 +11,7 @@ $().ready(function () {
   });
 
   $(".delete-all").on("click", function () {
-    if (number === 0) {
+    if (!number) {
       alert("이미 모든 아이템이 제거되었습니다.");
     } else {
       $("li").remove();

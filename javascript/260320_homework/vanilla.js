@@ -18,7 +18,7 @@ window.onload = function () {
   });
 
   deleteAll.addEventListener("click", function () {
-    if (number === 0) {
+    if (!number) {
       alert("이미 모든 아이템이 제거되었습니다.");
     } else {
       //   var listItems = ul.querySelectorAll("li");
