@@ -14,6 +14,7 @@ $().ready(function () {
         for (var i = 0; i < body.length; i++) {
           var comment = body[i];
           // console.log(comment);
+          //요구사항 3번
           var li = $("<li>");
           // $(".posts").append(li);
           // console.log(li);
@@ -25,6 +26,14 @@ $().ready(function () {
             width: "20rem",
             "border-radius": "50%",
           });
+
+          // var img = $("<img>")
+          //   .css({
+          //     height: "20rem",
+          //     width: "20rem",
+          //     "border-radius": "50%",
+          //   })
+          //   .attr("src", imgData);
 
           // 요구사항 5 & 6: login 값을 div에 넣고, 클릭 시 html_url로 이동하기
           var loginName = comment.login;
