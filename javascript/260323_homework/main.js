@@ -41,6 +41,10 @@ $().ready(function () {
 
           var loginDiv = $("<div>").text(loginName);
 
+          // loginDiv.data("url", htmlUrl).on("click", function () {
+          //   var url = $(this).data("url");
+          //   window.open(url);
+          // });
           (function (targetUrl) {
             loginDiv.on("click", function () {
               window.open(targetUrl);
